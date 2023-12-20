@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.toDo{
+    width: 40vw;
+    height: 30px;
+}
+.date{
+    height: 30px;
+}
+.add{
+    width: 10vw;
+    height: 37px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+p{
+    text-decoration: underline;
+    text-decoration-color: grey;
+    
+   
+}
+.list{
+    text-align: center;
+    font-size: 20px;
+}
+.del{
+    width: 100px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.back-btn{
+    text-decoration: none;
+    color: black;
+    float: left;
+    margin-left: 20%;
+}
+.back-btn:hover{
+    color: red;
+}

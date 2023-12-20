@@ -1,0 +1,417 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    padding: 2px;
+}
+.content{
+    height: auto;
+}
+.nav{
+    position: fixed;
+    display: flex;
+    color: white;
+    border: 1px solid yellow;
+    width: 98%;
+    padding: 2px;
+    z-index: 100;
+    background-color: black;
+    margin-top: -0.6%;
+   
+}
+.nav img{
+    height: 30px;
+    width: 30px;
+}
+.links{
+    width: 50vw;
+    margin-left:auto ;
+    padding-top: 10px;
+}
+.link{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20%;
+    margin-right: 5%;
+
+}
+.name{
+    padding-top: 10px;
+    color: white;
+    text-decoration: none;
+    padding-left: 3px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+.link:hover{
+    color: yellow;
+}
+.content{
+    margin-top: 2%;
+}
+.intro{
+    height: 100vh;
+    
+}
+.intro-text{
+    position: absolute;
+    color: white;
+    top: 30vh;
+    left: 20vw;
+
+    
+}
+.intro-text img{
+    width: 40px;
+    height: 40px;
+}
+.img{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 1px solid yellow;
+    border-radius: 500px;
+   left: 50vw;
+   top: 20vh;
+   background-image: url(tom.png);
+   background-repeat: no-repeat;
+   background-size: 500px;
+   background-position: center;
+   box-shadow: 3px 3px 3px yellow;
+   background-color: beige;
+}
+
+.about {
+    height: 100vh;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40vh;
+}
+.about-text{
+    width: 120%;
+    padding-top: 300px;
+
+}
+.work{
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.work:hover{
+    background-color: black;
+    border: 1px solid yellow;
+    color: yellow;
+}
+.skills{
+    color: white;
+    padding: 40px;
+}
+.skill-cols{
+    color: white;
+    height: 100vh;
+    padding: 80px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-rows: 400px;
+}
+.skill-box{
+    height: fit-content;
+    border: 1px solid yellow;
+    border-radius: 5px 20px;
+    padding: 10px;
+    text-align: center;
+}
+.skill-box:hover{
+    background-color: white;
+    color: black;
+
+}
+.skill-box img{
+    width: 100px;
+    height: 100px;
+    padding-top: 50%;
+   
+}
+.projects{
+    color: white;
+    height: fit-content;
+    padding: 40px;
+}
+.project-boxes{
+    color: white;
+    height: 100vh;
+    padding: 80px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-rows: 400px;
+
+}
+.project{
+    
+    border: 1px solid yellow;
+    border-radius: 5px 20px;
+    padding: 10px;
+    text-align: center;
+}
+.project:hover{
+    
+    background-color: white;
+    color: black;
+}
+.project img{
+    width: 170px;
+    height: 150px;
+}
+.project button{
+    color: black;
+    background-color: yellow;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.project button:hover{
+    color: yellow;
+    background-color: black;
+    border: 1px solid yellow;
+    
+}
+.footer{
+    color: white;
+    padding: 70px;
+    text-align: center;
+    
+    
+}
+.footer img{
+    height: 30px;
+    
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer a:hover{
+    
+    color: yellow;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+ .dropdown:hover .dropbtn {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+@media only screen and (max-width:600px){
+    .link{
+        display: none;
+    }
+    .img{
+        
+        width: 200px;
+        height: 200px;
+        background-size: 200px;
+       
+    }
+    .intro-text{
+
+        top: 25vh;
+        left: 10vw;
+        font-size: 9px;
+    
+        
+    }
+    .intro{
+        height: 50vh;
+        
+    }
+    .about-text{
+       
+        padding-top: 30px;
+    
+    }
+    .about {
+        width: 70vw;
+        padding: 20px;
+        height: fit-content;
+    }
+    /* .skills{
+        height: fit-content;
+    } */
+    .skill-cols{
+        
+        height: fit-content;
+        
+    }
+    .project-boxes{
+        
+        height: fit-content;
+        
+    
+    }
+
+}
+@media only screen and (min-width:600px){
+    .link{
+        display: none;
+    }
+    .img{
+        
+        width: 250px;
+        height: 250px;
+        background-size: 250px;
+       
+    }
+    .intro-text{
+
+        top: 25vh;
+        left: 10vw;
+        font-size: 11px;
+    
+        
+    }
+    .intro{
+        height: 50vh;
+        
+    }
+    .about-text{
+       
+        padding-top: 30px;
+    
+    }
+    .about {
+        width: 70vw;
+        padding: 20px;
+        height: fit-content;
+    }
+    .skill-cols{
+        
+        height: fit-content;
+        
+    }
+    .project-boxes{
+        
+        height: fit-content;
+        
+    
+    }
+
+}
+@media only screen and (min-width:768px){
+    .link{
+        display: unset;
+        
+    }
+    .dropdown{
+        display: none;
+    }
+    .img{
+        
+        width: 300px;
+        height: 300px;
+        background-size: 300px;
+       
+    }
+    .intro-text{
+
+        top: 25vh;
+        left: 10vw;
+        font-size: 15px;
+    
+        
+    }
+    .intro{
+        height: 60vh;
+        
+    }
+}
+@media only screen and (min-width:992px){
+    .intro-text{
+
+        top: 30vh;
+        left: 10vw;
+        font-size: 20px;
+    
+        
+    }
+    .intro{
+        height: 100vh;
+        
+    }
+    .img{
+        
+        width: 500px;
+        height: 500px;
+        background-size: 500px;
+       
+    }
+    .about {
+        height: 100vh;
+        color: white;
+        padding-left: 40px;
+        padding-right: 40vh;
+        padding-top: 200px;
+    }
+    
+}
+.p-link{
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: yellow;
+    color:black;
+    border-radius: 5px;
+   
+}
+.p-link:hover{
+   
+    background-color: black;
+    color:yellow;
+    border:1px solid yellow;
+   
+}
+/*rock paperscissors*/

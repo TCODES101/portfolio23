@@ -1,0 +1,51 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="{%static 'styles3.css'%}">
+</head>
+<body>
+    <a href="/" class="back-btn"><----Back</a>
+    <h1>My to do list.</h1>
+    <input type="text" class="toDo"placeholder="To do...">
+    <input type="date" class="date">
+    <button class="add" onclick="addList();">Add</button>
+    <div class="list"></div>
+    <script>
+        
+        let list=[];
+        
+        renderList();
+        
+        function renderList(){
+            let todoHTML='';
+            
+            for (i=0;i<list.length;i++){
+            
+            const html=`<p>${list[i].work}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;${list[i].date} &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button onclick="list.splice(${i},1);renderList();" class="del">Delete</button></p>`;
+            todoHTML+=html;
+            }
+            document.querySelector('.list').innerHTML=todoHTML;
+        
+        }
+        
+        
+
+        function addList(){
+            work={work:document.querySelector('.toDo').value,date:document.querySelector('.date').value};
+            list.push(work);
+            // console.log(list);
+            document.querySelector('.toDo').value='';
+            document.querySelector('.date').value='';
+            renderList();
+            
+
+
+        }
+    </script>
+    
+</body>
+</html>
