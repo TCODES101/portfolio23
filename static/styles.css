@@ -245,38 +245,22 @@ body{
   .dropdown:hover .dropdown-content {
     display: block;
   }
-@media only screen and (max-width:480px){
-    .img{
-        
-        width: 180px;
-        height: 180px;
-        background-size: 180px;
-       
-    }
-    .intro-text{
 
-        top: 25vh;
-        left: 10vw;
-        font-size: 7px;
-    
-        
-    }
-}
 @media only screen and (max-width:600px){
     .link{
         display: none;
     }
     .img{
         
-        width: 200px;
-        height: 200px;
-        background-size: 200px;
+        width: 150px;
+        height: 150px;
+        background-size: 150px;
        
     }
     .intro-text{
 
-        top: 25vh;
-        left: 10vw;
+        top: 20vh;
+        left: 1vw;
         font-size: 9px;
     
         
