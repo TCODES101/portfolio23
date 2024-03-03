@@ -14,14 +14,14 @@
     <button onclick=
     "
     play('Rock');
-    document.querySelector('.score').innerHTML=`Wins: ${score.wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`;
+    document.querySelector('.score').innerHTML=`Wins: ${score.Wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`;
 
     "
     class="btn-rock"></button>
     <button onclick=
     "
     play('Paper');
-    document.querySelector('.score').innerHTML=`Wins: ${score.wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`;
+    document.querySelector('.score').innerHTML=`Wins: ${score.Wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`;
 
     "
     class="btn-paper"></button>
@@ -29,7 +29,7 @@
     <button onclick=
     "
     play('Scissors');
-    document.querySelector('.score').innerHTML=`Wins: ${score.wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`;
+    document.querySelector('.score').innerHTML=`Wins: ${score.Wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`;
     "class="btn-scissors"></button>
 
     <p class="result"></p>
@@ -41,9 +41,12 @@
     <button onclick="
     score.Losses=0;
     score.Ties=0;
-    score.wins=0;
+    score.Wins=0;
     localStorage.removeItem('score');
-    document.querySelector('.score').innerHTML=`Wins: ${score.wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`;
+    document.querySelector('.score').innerHTML=`Wins: ${score.Wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`;
+    document.querySelector('.you').innerHTML='';
+    document.querySelector('.computer').innerHTML='';
+    document.querySelector('.result').innerHTML='';
     " class="reset-btn">Reset</button>
     
     <script>
@@ -55,7 +58,7 @@
         //         Ties:0
         //     };
         // }
-        document.querySelector('.score').innerHTML=`Wins: ${score.wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`;
+        document.querySelector('.score').innerHTML=`Wins: ${score.Wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`;
         function play(playerMove){
             randomNumber=Math.random()
             let computerValue='';
@@ -93,7 +96,7 @@
             if (result==='Lose'){
                 score.Losses +=1;
             }else if (result==='Win'){
-                score.wins +=1;
+                score.Wins +=1;
 
             }else if(result==='Tie'){
                 score.Ties +=1;
@@ -126,7 +129,7 @@
             }
 
             document.querySelector('.result').innerHTML=`You ${result}`;
-            document.querySelector('.moves').innerHTML=`You ${playerMove} - ${computerValue} Computer`;
+            // document.querySelector('.moves').innerHTML=`You ${playerMove} - ${computerValue} Computer`;
             
             // alert(`you ${result}. Computer chose ${computerValue}.
             // Wins: ${score.wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`);
